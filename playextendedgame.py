@@ -42,7 +42,8 @@ def get_player_move():
 			pass
 		print("Oops! I didn't understand that. Please enter 1,2,3,4 or 5")
 
-def run_comparison(player, computer):
+
+def show_countdown(player, computer):
     print("3...")
     time.sleep(1)
     print("2...")
@@ -52,6 +53,9 @@ def run_comparison(player, computer):
     print("You threw {}".format(names[player]))
     print("Computer threw {}".format(names[computer]))
     print()
+
+def run_comparison(player, computer):
+    show_countdown(player, computer)
     global player_score, computer_score
     if player == computer:
         print("It's a tie")
